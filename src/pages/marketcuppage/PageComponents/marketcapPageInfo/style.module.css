@@ -1,0 +1,87 @@
+.MarketCapPageInfo--info__name {
+    color: rgba(122, 122, 124, 1);
+}
+
+.MarketCapPageInfo--info__percent {
+    color: rgba(255, 87, 87, 1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.MarketCapPageInfo--course__img{
+
+}
+.MarketCapPageInfo--course__img.up{
+    transform: rotate(180deg);
+    
+}
+.MarketCapPageInfo--course__img.up *{
+    fill: var(--green-500-color);
+    stroke: var(--green-500-color);
+    
+}
+.MarketCapPageInfo--info__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.MarketCapPageInfo--info {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 16px 0 52px 0;
+}
+@media (max-width: 1280px) {
+    .MarketCapPageInfo--info {
+        width: 100vw;
+        gap: 20px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        padding-right: 180px;
+    }
+
+    .MarketCapPageInfo--info__percent {
+        min-width: 80px;
+    }
+
+    .MarketCapPageInfo--info__text {
+        min-width: 100px;
+    }
+
+    .MarketCapPageInfo--info__name {
+        min-width: 110px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .MarketCapPageInfo--info {
+        width: 100vw;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 940px) {
+    .MarketCapPageInfo--info {
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .MarketCapPageInfo--info {
+        width: 100vw;
+        gap: 12px;
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .MarketCapPageInfo--info {
+        padding-right: 0;
+    }
+
+    .MarketCapPageInfo--info__text {
+        min-width: 90px;
+    }
+
+}

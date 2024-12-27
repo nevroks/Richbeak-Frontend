@@ -1,0 +1,58 @@
+.LastCoinsRelatedNewsList__wrapper {
+    width: 100%;
+}
+.LastCoinsRelatedNewsList__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.LastCoinsRelatedNewsList__info--link {
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-end;
+}
+.LastCoinsRelatedNewsList__info--link__text {
+    color: var( --accent-color);
+}
+.LastCoinsRelatedNewsList__info--link__img path{
+    stroke: var( --accent-color);
+}
+.LastCoinsRelatedNewsList__list {
+    width: 100%;
+    display: flex;
+    margin: 32px 0;
+    gap: 40px;
+}
+
+@media (max-width: 1280px) {
+    .LastCoinsRelatedNewsList__list {
+        margin: 24px 0;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .LastCoinsRelatedNewsList__info--link {
+        column-gap: 6px;
+    }
+
+}
+
+@media (max-width: 940px) {
+    .LastCoinsRelatedNewsList__list {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .LastCoinsRelatedNewsList__info h1 {
+        position: relative;
+        bottom: -4px;
+    }
+
+    .LastCoinsRelatedNewsList__list {
+        margin: 16px 0;
+        gap: 15px;
+    }
+}

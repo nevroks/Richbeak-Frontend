@@ -1,0 +1,41 @@
+.CoinShortItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CoinShortItem__info {
+    display: flex;
+    align-items: center;
+}
+
+.CoinShortItem__info img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.CoinShortItem__info div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.CoinShortItem__stats {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    align-items: flex-end;
+}
+
+@media (max-width: 1280px) {
+    .CoinShortItem__info div {
+        row-gap: 1px;
+    }
+
+    .CoinShortItem__info img {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }
+}

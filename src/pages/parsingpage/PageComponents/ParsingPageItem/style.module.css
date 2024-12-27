@@ -1,0 +1,9 @@
+.ParsingPageItem {
+  width: 630px;
+  height: 60px;
+  background-color:  var(--bg-color-secondary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}

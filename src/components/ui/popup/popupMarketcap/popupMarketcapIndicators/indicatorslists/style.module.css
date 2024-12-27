@@ -1,0 +1,72 @@
+.PopupIndicatorsList {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.PopupIndicatorsList--row__text__name {
+    color: var(--gray-text-600);
+    min-width: 168px;
+}
+
+.PopupIndicatorsList--container__indicators {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    max-width: 600px;
+}
+
+.PopupIndicatorsList--row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 37px;
+}
+
+.PopupIndicatorsList--row__border {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.PopupIndicatorsList--row__border:last-of-type {
+    border-bottom: none;
+}
+
+.PopupIndicatorsList--row__border:first-of-type {
+    padding-top: 0;
+}
+
+.PopupIndicatorsList--row__button {
+    color: var(--black-800-color);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+
+@media (max-width: 1700px) {
+    .PopupIndicatorsList {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .PopupIndicatorsList--row__border {
+        padding: 10px 0;
+    }
+
+    .PopupIndicatorsList--row__border:last-child {
+        padding: 10px 0 0 0;
+    }
+
+    .PopupIndicatorsList--row {
+        flex-direction: column;
+        row-gap: 6px;
+    }
+
+    .PopupIndicatorsList--container__indicators {
+        gap: 4px;
+        justify-content: flex-start;
+        max-width: 600px;
+    }
+}

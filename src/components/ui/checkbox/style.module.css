@@ -1,0 +1,31 @@
+
+.checkbox{
+  content: "";
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(87, 102, 237, 1);
+  background-image: url(../../../assets/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 10px;
+  background-position: center;
+  transition: 0.2s;
+}
+
+.checkbox__checked{
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+  background: rgba(213, 217, 250, 1);
+}
+
+.checkbox__text {
+  margin-left: 10px;
+  color:  var(--black-text-500);;
+}
+
+

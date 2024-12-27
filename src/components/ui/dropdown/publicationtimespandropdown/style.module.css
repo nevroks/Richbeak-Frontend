@@ -1,0 +1,13 @@
+.PublicationTimeSpanDropdown__content{
+    width: 125px;
+}
+
+.PublicationTimeSpanDropdown__wrapper{
+    background:none;
+}
+
+@media (max-width: 1024px) {
+    .PublicationTimeSpanDropdown__content{
+        width: 100%;
+    }
+}

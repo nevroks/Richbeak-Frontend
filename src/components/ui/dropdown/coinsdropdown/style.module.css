@@ -1,0 +1,7 @@
+
+.Coins__dropdown {
+    background-color: var(--button-bg);
+}
+.dropdown__button p{
+    padding-left: 5px;
+}

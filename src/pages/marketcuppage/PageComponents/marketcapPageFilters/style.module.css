@@ -1,0 +1,138 @@
+.MarketCupPageFilters__container--filters {
+    width: 100%;
+    min-height: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.MarketCupPageFilters__selected--indicator {
+    color: var(--accent_black);
+    background-color: var(--coin-bg);
+    padding: 8px 16px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.MarketCupPageFilters__nav li {
+    position: relative;
+}
+
+.MarketCupPageFilters__sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 220px;
+    height: 340px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 40px 0px rgba(7, 6, 34, 0.08);
+    padding: 14px 16px 0 16px;
+    z-index: 250;
+}
+
+.MarketCupPageFilters__nav li:hover > .MarketCupPageFilters__sub-menu {
+    display: block;
+    width: max-content;
+}
+
+.MarketCupPageFilters__nav--title {
+    background-color: var( --button-bg);
+    border-radius: 28px;
+    padding: 8px 14px 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.MarketCupPageFilters__input {
+    width: 188px;
+    padding-right: 8px;
+}
+
+.MarketCupPageFilters__nav--subtitle {
+    color:var(--black-500-color);
+    margin: 20px 0 14px 0;
+}
+
+.MarketCupPageFilters__nav--item {
+    color:var( --black_white);
+}
+
+.MarketCupPageFilters__nav--box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+@media (max-width: 1280px) {
+    .MarketCupPageFilters__nav--title {
+        padding: 8px 10px 8px 14px;
+    }
+
+    .MarketCupPageFilters__nav--img {
+        width: 8px;
+        height: 9px;
+    }
+
+    .MarketCupPageFilters__sub-menu {
+        left: 0;
+        max-width: 174px;
+        height: 340px;
+        padding: 12px 12px 0 12px;
+    }
+
+    .MarketCupPageFilters__input {
+        width: 150px;
+    }
+
+    .input__img {
+        width: 14px;
+        height: 14px;
+    }
+    .MarketCupPageFilters__selected--indicator{
+        padding: 8px 14px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .MarketCupPageFilters__nav--title {
+        padding: 6px 10px 6px 10px;
+    }
+
+    .MarketCupPageFilters__nav--img {
+        width: 5px;
+        height: 6px;
+    }
+
+    .MarketCupPageFilters__sub-menu {
+        left: 0;
+        max-width: 147px;
+        height: 180px;
+        padding: 8px 8px 0 8px;
+    }
+
+    .MarketCupPageFilters__input {
+        width: 125px;
+    }
+
+    .input__img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .MarketCupPageFilters__nav--subtitle {
+        margin: 12px 0 10px 0;
+    }
+    .MarketCupPageFilters__selected--indicator {
+        padding: 6px 10px;
+        justify-content: space-between;
+        height: 24px;
+    }
+}

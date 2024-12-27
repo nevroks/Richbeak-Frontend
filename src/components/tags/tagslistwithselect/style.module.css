@@ -1,0 +1,28 @@
+.TagsListWithSelect__tag--button {
+    padding: 10px 16px;
+}
+
+.topNewsList_container_tags {
+    display: flex;
+    column-gap: 12px;
+}
+
+.TagsListWithSelect__tag--button.selected {
+    background-color: var(--black_white);
+    color: var(--white_black );
+    border-radius: 16px;
+}
+@media (max-width: 1280px) {
+    .topNewsList_container_tags {
+    }
+}
+@media (max-width: 600px) {
+
+    .topNewsList_container_tags {
+        column-gap: 2px;
+    }
+
+    .TagsListWithSelect__tag--button {
+        padding: 6px 8px;
+    }
+}

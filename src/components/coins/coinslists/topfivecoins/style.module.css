@@ -1,0 +1,25 @@
+.TopFiveCoins {
+    margin-top: 20px;
+}
+.TopFiveCoins__list{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+@media (max-width: 1280px) {
+    .TopFiveCoins {
+        margin-top: 17px;
+    }
+    .TopFiveCoins__list{
+        margin-top: 13px;
+    }
+}
+@media (max-width: 600px) {
+    .TopFiveCoins {
+        margin-top: 20px;
+    }
+    .TopFiveCoins__list{
+        margin-top: 10px;
+    }
+}

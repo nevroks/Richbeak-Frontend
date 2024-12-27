@@ -1,0 +1,33 @@
+.editor__popup {
+  align-items: center;
+  width: 340px !important;
+  left: calc((100% - 330px) / 2) !important;
+  min-height: fit-content !important;
+  padding: 30px !important;
+}
+.popupEditor__title {
+  align-self: flex-start;
+}
+
+.popupEditor__button {
+  background-color: var(--accent-color);
+  color: var(--gray-500-color);
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 100%;
+  margin: 15px 0 0;
+}
+
+.popupEditor__button:disabled {
+  background-color: var(--accent-darker);
+  color: var(--gray-500-color);
+}
+
+.popupEditor__input {
+  margin: 15px 0 0;
+  width: 100%;
+}
+
+.popupEditor__input--wrapper {
+  width: 100%;
+}

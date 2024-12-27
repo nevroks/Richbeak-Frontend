@@ -1,0 +1,28 @@
+.editorPopup {
+    background-color: var(--background-color);
+    min-width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 0px 40px 0px rgba(7, 6, 34, 0.08);
+
+}
+
+.editorPopup__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.editorPopup__list--item {
+    color: var(--tag-text);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+
+.editorPopup__list--item.delete {
+    color: var(--red-500-color);
+}

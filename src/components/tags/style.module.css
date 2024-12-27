@@ -1,0 +1,20 @@
+.TagsListItem__name {
+    color:var(--tag-text);
+}
+
+.TagsListItem__dot {
+    color:var(--tag-text);
+    margin: 0 5px;
+}
+
+.TagsListItem__dot:last-of-type {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .TagsListItem__dot {
+        color:var(--tag-text);
+        margin: 0 2px;
+    }
+
+}

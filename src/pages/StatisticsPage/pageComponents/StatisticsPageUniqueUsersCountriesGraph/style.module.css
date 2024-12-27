@@ -1,0 +1,29 @@
+.StatisticsPageUniqueUsersCountriesGraph__title{
+    margin-bottom: 40px;
+}
+.StatisticsPageUniqueUsersCountriesGraph__graph{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+.StatisticsPageUniqueUsersCountriesGraph__graph--legendList{
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+.StatisticsPageUniqueUsersCountriesGraph__graph--legendList__item{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 40px;
+}
+.StatisticsPageUniqueUsersCountriesGraph__graph--legendList__item--country{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.StatisticsPageUniqueUsersCountriesGraph__graph--legendList__item--country__color{
+    display: block;
+    width: 26px;
+    height: 16px;
+    border-radius: 10px;
+}

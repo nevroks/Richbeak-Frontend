@@ -1,0 +1,4 @@
+.SingleNewsPageCommentsList__item--replies {
+  border-top: 1px solid var(--light-line);
+  margin: 16px 0 24px 70px;
+}

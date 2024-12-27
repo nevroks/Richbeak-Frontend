@@ -1,0 +1,84 @@
+.editor__main {
+  margin-top: 32px;
+}
+
+.editor__main--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.editor__main--list__popup {
+  position: absolute;
+  background-color: var(--bg-color-secondary);
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0px 0px 40px 0px rgba(7, 6, 34, 0.08);
+  z-index: 1000;
+  transform: translateX(-50%);
+}
+
+.editor__main--list__el {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color-secondary);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.editor__main--list__el > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-darker);
+  color: var(--white-100-color);
+  width: 33px;
+  min-height: 27px;
+  border-radius: 6px;
+  padding: 4px 6px;
+  margin-right: 8px;
+}
+
+.editor__main--list__el--info {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editor__main--list__el--info button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: var(--background-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.editor__main--list__el--info > span {
+  cursor: pointer;
+}
+
+.editor__footer {
+  margin-top: 24px;
+}
+
+.editor__input {
+  max-width: 170px;
+}
+
+.editor__editIcon {
+  fill: var(--accent-color)
+}
+
+.editor__cancelIcon {
+  fill: var(--accent-color)
+}

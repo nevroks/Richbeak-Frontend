@@ -1,0 +1,43 @@
+.StatisticsPageRequestsPerSecondGraph__wrapper{
+
+}
+.StatisticsPageRequestsPerSecondGraph__graph svg > g > g:nth-child(2) g:nth-child(6n+1) {
+    display: block;
+}
+
+.StatisticsPageRequestsPerSecondGraph__graph svg > g > g:nth-child(2) g:not(:nth-child(6n+1)) {
+    display: none;
+}
+.StatisticsPageRequestsPerSecondGraph__graph--tooltip{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 40px 0px rgba(7, 6, 34, 0.08);
+    padding: 14px 16px;
+    background-color: var(--background-color);
+}
+.StatisticsPageRequestsPerSecondGraph__graph--tooltip__time{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: red;
+}
+.StatisticsPageRequestsPerSecondGraph__graph--tooltip__time *{
+    color: var(--gray-600-color);
+}
+.StatisticsPageRequestsPerSecondGraph__graph--tooltip__requests{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.StatisticsPageRequestsPerSecondGraph__graph--tooltip__requests span{
+    background-color: var(--accent-color);
+    padding: 4px 6px;
+    border-radius: 6px;
+    color: var(--white_black);
+}
+.StatisticsPageRequestsPerSecondGraph__navigation {
+    display: flex;
+    gap: 8px;
+}

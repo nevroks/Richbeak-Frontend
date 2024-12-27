@@ -1,0 +1,325 @@
+.MarketCapPageList {
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+.MarketCapPageList::-webkit-scrollbar{
+    border-radius: 14px;
+    width: 8px; /* according to figma should be 0px? */
+    height: 5px;
+}
+
+.MarketCapPageList::-webkit-scrollbar-thumb{
+    border-radius: 3px 0 0 3px;
+    background-color: var(--gray-600-color);
+}
+
+.MarketCapPageList--container__relative {
+    position: relative;
+}
+.MarketCapPageList--button__up {
+    background-image: url(../../../../assets/icons/iconArrowUpGrey.svg);
+    width: 8px;
+    height: 8px;
+}
+
+.MarketCapPageList--button__up_active {
+    background-image: url(../../../../assets/icons/iconArrowUpBlue.svg);
+}
+
+.MarketCapPageList--button__down {
+    background-image: url(../../../../assets/icons/iconArrowDownGrey.svg);
+    width: 8px;
+    height: 8px;
+}
+.MarketCapPageList--button__down_active {
+    background-image: url(../../../../assets/icons/iconArrowUpBlue.svg); 
+    transform: rotate(180deg);
+}
+
+.MarketCapPageList--container__rowItem {
+    display: flex;
+}
+
+.MarketCapPageList--container__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    justify-content: center;
+}
+
+.MarketCapPageList--text {
+    color:var(--tag-text-sec);
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+   
+}
+
+.MarketCapPageList--icon__info {
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.MarketCapPageList--icon__info__text {
+    display: none;
+    color:var(--black-text-500);
+    padding: 14px 16px;
+    box-shadow: 0px 0px 40px 0px rgba(7, 6, 34, 0.08);
+    border-radius: 12px;
+    position: absolute;
+    width: 330px;
+    background-color: var(--background-color);
+    top: 30px;
+    left: -35px;
+    z-index: 250;
+}
+
+.MarketCapPageList--icon__info:hover + .MarketCapPageList--icon__info__text {
+    display: block;
+}
+.MarketCapPageList--table__td__text {
+    height: 100px;
+    color: var(--black_white);
+}
+.MarketCapPageList--table__td__anotherName {
+    white-space: nowrap;
+    color:var(--black-400-color);
+}
+.MarketCapPageList--table__td__index {
+    white-space: nowrap;
+    width: 30px;
+    text-align: left;
+    
+}
+.MarketCapPageList--table__tr {
+    height: 72px;
+    border-bottom: 1px solid var( --line);
+}
+.MarketCapPageList--table__tr:last-child {
+    border-bottom:none
+}
+.MarketCapPageList--table__tr__categories {
+    height: 72px;
+    border-bottom: 1px solid var( --line);
+    padding-left: 1000px;
+}
+.MarketCapPageList--table__th {
+position: absolute;
+}
+.MarketCapPageList--container__cell {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    min-width: 100px;
+    position: relative;
+}
+.MarketCapPageList--container__cell__info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    position: relative;
+}
+
+.MarketCapPageList--container__cell__first {
+    width: 40px;
+    display: flex;
+    height: 71px;
+    align-items: center;
+    background-color: var(--background-color);
+    width: 200px;
+    z-index: 200;
+    gap: 10px;
+    position: relative;
+    /* word-wrap: break-word */
+    /* overflow: scroll;
+    scrollbar-width: none; */
+}
+.MarketCapPageList--box__cell {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 184px;
+}
+td, th {
+    padding-right: 10px; /* задать отступ внутри ячеек */
+}
+.MarketCapPageList--container__cell__money {
+    width: 150px;
+}
+.MarketCapPageList--table {
+    text-align: right;
+    border-spacing: 30px;
+    border-collapse: collapse;
+    min-width: 1280px;
+}
+.MarketCapPageList--fake {
+    width: 200px;
+}
+.MarketCapPageList__preloader--overlay {
+        position: absolute;
+        width: 100%;
+        height: 83%;
+        z-index: 10;
+        padding: 20px;
+        top: 70px;
+        z-index: 1000;
+        background-color: var(--black_white_preloader);
+}
+.MarketCapPageList__preloader--overlay__10 {
+    height: 92%;
+    top: 70px;
+}
+.MarketCapPageList__preloader--overlay__25 {
+    height: 97%;
+    top: 70px;
+}
+@media (max-width: 1280px) {
+  
+    .MarketCapPageList {
+        width: 120%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .MarketCapPageList--fake__last__cell {
+        width: 100px;
+    }
+    .MarketCapPageList__preloader--overlay {
+        width: 130%;
+}
+}
+
+@media (max-width: 1024px) {
+    .MarketCapPageList--fake__last__cell {
+        width: 150px;
+    }
+    .MarketCapPageList--table__tr__categories {
+        height: 42px;
+    }
+    .MarketCapPageList--table__tr {
+        height: 42px;
+    }
+    .MarketCapPageList--container__cell__first {
+        height: 41px;
+    }
+    .MarketCapPageList__preloader--overlay {
+        height: 85%;
+        top: 40px;
+    }
+    .MarketCapPageList__preloader--overlay__10 {
+        height: 92%;
+    }
+    .MarketCapPageList__preloader--overlay__25 {
+        height: 97%;
+    }
+}
+@media (max-width: 940px) {
+    .MarketCapPageList--fake__last__cell {
+        width: 100px;
+    }
+    .MarketCapPageList {
+        width: 130%;
+
+    }
+    .MarketCapPageList--money__img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .MarketCapPageList--container__rowItem__first {
+        width: 130px;
+    }
+    .MarketCapPageList--fake {
+        width: 110px;
+    }
+    .MarketCapPageList--container__cell__first {
+        width: 130px;
+    }
+    .MarketCapPageList--money__img {
+        width: 14px;
+        height: 14px;
+    }
+    .MarketCapPageList--box__cell {
+        gap: 4px;
+    }
+    .MarketCapPageList--table__td__index {
+        width: 20px;
+    }
+    .MarketCapPageList--fake__last__cell {
+        width: 100px;
+    }
+    .MarketCapPageList--table {
+        min-width: 1100px;
+    }
+}
+
+@media (max-width: 580px) {
+    .MarketCapPageList {
+        width: 100vw;
+    }
+
+    .MarketCapPageList--button__up {
+        background-image: url(../../../../assets/icons/iconArrowUpGreyMobile.svg);
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 4px;
+    }
+
+    .MarketCapPageList--button__down {
+        background-image: url(../../../../assets/icons/iconArrowDownGreyMobile.svg);
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 4px;
+    }
+
+    
+}
+
+@media (max-width: 320px) {
+    
+    .MarketCapPageList--table {
+        min-width: 1100px;
+    }
+    
+    .MarketCapPageList--container__cell__first {
+        width: 150px;
+        padding-right: 10px;
+    }
+    .MarketCapPageList--fake {
+        width: 150px;
+    }
+    .MarketCapPageList--fake__last__cell {
+        width: 20px;
+    }
+    .MarketCapPageList--table__tr__categories {
+        height: 32px;
+    }
+    .MarketCapPageList--table__tr {
+        height: 32px;
+    }
+    .MarketCapPageList--container__cell__first {
+        height: 31px;
+    }
+    .MarketCapPageList--container__cell__info {
+        gap: 3px;
+    }
+    .MarketCapPageList--table__th_fake {
+        width: 150px;
+    }
+    .MarketCapPageList--icon__info__text {
+        padding: 7px 8px;
+        width: 200px;
+        left: 40px;
+    }
+    .MarketCapPageList__preloader--overlay {
+        top: 32px;
+    }
+   
+}
+
+
+

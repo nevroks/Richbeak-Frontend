@@ -1,0 +1,37 @@
+.TagsLastNewsList__list {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.TagsLastNewsList__list.horizontal__list{
+    flex-direction: row;
+}
+.TagsLastNewsList__list.vertical__list{
+    flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+    .TagsLastNewsList__list {
+        margin-top: 16px;
+        gap: 12px;
+    }
+}
+@media (max-width: 600px) {
+    .TagsLastNewsList {
+        max-width: 100%;
+    }
+    .TagsLastNewsList__list {
+        margin-top: 16px;
+        gap: 12px;
+        overflow-x: scroll;
+    }
+    .TagsLastNewsList__list.horizontal__list{
+        max-width: 100%;
+        column-gap: 40px;
+        overflow-x: scroll;
+    }
+
+    .TagsLastNewsList__list.horizontal__list a div {
+        width: 35vw
+    }
+}

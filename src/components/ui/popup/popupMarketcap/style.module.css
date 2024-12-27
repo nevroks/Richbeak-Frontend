@@ -1,0 +1,207 @@
+.PopupMarketcap--text {
+    color:var(--black-text-500);
+    margin-top: 12px;
+}
+
+.PopupMarketcap--box__indicators__selected {
+    background-color: var( --bg-color-secondary);
+    width: 100%;
+    min-height: 128px;
+    border-radius: 12px;
+    display: flex;
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.PopupMarketcap--button__default__indicators {
+    color: var(--accent_black);
+    background-color: var(--coin-bg);
+    border-radius: 8px;
+    width: 150px;
+    height: 33px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 8px 10px;
+    gap: 4px;
+}
+
+.PopupMarketcap--text__index {
+    background-color: var(--coin-bg);
+    color: var( --black-800-color);
+    width: 27px;
+    height: 27px;
+    border-radius: 6px;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+.PopupMarketcap--box__indicator__selected {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    max-height: 43px;
+    align-items: center;
+    cursor: grab;
+}
+
+.PopupMarketcap--box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: flex-end;
+}
+
+.PopupMarketcap--button__save__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+
+.PopupMarketcap--button__save {
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.PopupMarketcap--button__save__on {
+    background-color: var( --accent-toggle);
+    color:var( --white-100-color);
+}
+
+.PopupMarketcap--box__counter {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.PopupMarketcap--text__counter {
+    color:var(--black-800-color);
+    padding: 4px 10px;
+    background-color: var( --coin-bg);
+    border-radius: 8px;
+}
+
+@media (max-width: 1700px) {
+    .PopupMarketcap--text {
+        margin-top: 6px;
+    }
+
+    .PopupMarketcap--box {
+        margin-top: 12px;
+        row-gap: 10px;
+    }
+
+    .PopupMarketcap--button__default__indicators {
+        max-width: 150px;
+        height: 30px;
+        padding: 8px 10px;
+        gap: 4px;
+    }
+
+    .PopupMarketcap--button__default__indicators__img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .PopupMarketcap--box__indicators__selected {
+        min-height: 98px;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .PopupMarketcap--box__indicator__selected {
+        gap: 6px;
+        padding: 6px 10px 6px 6px;
+        max-height: 33px;
+        align-items: center;
+    }
+
+    .PopupMarketcap--button__save__container {
+        margin-top: 32px;
+    }
+
+    .PopupMarketcap--button__save {
+        padding: 10px 16px;
+    }
+
+    .PopupMarketcap--box__counter {
+        gap: 10px;
+    }
+
+    .PopupMarketcap--text__counter {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .PopupMarketcap--button__default__indicators {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 800px) {
+    .PopupMarketcap--box {
+        row-gap: 6px;
+    }
+
+    .PopupMarketcap--button__default__indicators {
+        width: 120px;
+        height: 24px;
+        padding: 6px 8px;
+    }
+
+    .PopupMarketcap--button__default__indicators__img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .PopupMarketcap--box__indicators__selected {
+        min-height: 138px;
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .PopupMarketcap--box__indicator__selected {
+        gap: 6px;
+        padding: 4px 8px 4px 4px;
+        max-height: 26px;
+    }
+
+    .PopupMarketcap--button__save__container {
+        margin-top: 24px;
+        gap: 12px;
+    }
+
+    .PopupMarketcap--button__save {
+        padding: 8px 16px;
+    }
+
+    .PopupMarketcap--text__index {
+        width: 18px;
+        height: 18px;
+        padding: 2px 6.5px;
+        text-align: center;
+    }
+
+    .PopupMarketcap--button__change__indicator__img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .PopupMarketcap--button__change__indicator {
+        width: 10px;
+        height: 10px;
+    }
+
+    .PopupMarketcap--box__counter {
+        gap: 4px;
+    }
+
+    .PopupMarketcap--text__counter {
+        padding: 3px 6px;
+    }
+}

@@ -1,0 +1,266 @@
+.MarketCupPage {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.MarketCupPage--info__name {
+    color: var(--tag-text-sec);
+}
+
+.MarketCupPage--info__percent {
+    color: var( --red-500-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.MarketCupPage--info__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.MarketCupPage--info {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 16px 0 52px 0;
+}
+
+
+.MarketCupPage--button {
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    align-items: center;
+    color:var( --black-400-color);
+}
+
+.MarketCupPage--box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.MarketCupPage--buttons__container {
+    display: flex;
+    gap: 10px;
+}
+
+.MarketCupPage--selection {
+    color:var(--black_white);
+    background-color: var(--background-color);
+}
+
+.MarketCupPage--selection  option {
+    color:var(--black_white);
+    background-color: var(--background-color);
+    border: none;
+}
+
+.MarketCupPage--button__grey {
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 50px;
+    padding: 8px 10px;
+    background-color: var(  --button-bg);
+    height: 33px;
+    border-radius: 8px;
+}
+
+.MarketCupPage--button__icon {
+    margin-right: 0.5px;
+}
+
+.MarketCupPage--button__edit {
+    min-width: 50px;
+    background-color: var(  --button-bg);
+}
+
+
+.MarketCupPage--selection__line {
+    width: 39px;
+    height: 25px;
+    background-color: var(--button-bg);
+    border-radius: 8px;
+}
+
+.MarketCupPage--button__page {
+    width: 25px;
+    height: 25px;
+    color:var(--black-text-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.MarketCupPage--box__pagination {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.MarketCupPage--box__pagination  button {
+    color: var(--tag-text-sec);
+}
+
+.MarketCupPage--pagination__img {
+    width: 12px;
+    height: 12px;
+}
+
+.MarketCupPage--box__line {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.MarketCupPage--box__line_left {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.MarketCupPage--container__selected__indicators {
+    width: 100%;
+    min-height: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.nav__img {
+    width: 10px;
+    height: 11px;
+}
+
+.input__img {
+    width: 16px;
+    height: 16px;
+}
+
+.MarketCupPage--buttons__box {
+    display: flex;
+    column-gap: 10px;
+}
+
+.MarketCupPage--info__text {
+    color: var(--black_white);
+}
+
+
+@media (max-width: 1280px) {
+
+    .MarketCupPage--button__grey {
+        min-width: 50px;
+        padding: 8px 10px;
+    }
+
+    .MarketCupPage--selection__line {
+        width: 33px;
+        height: 22px;
+    }
+
+    .MarketCupPage--button {
+        padding: 8px 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .MarketCupPage--button__Square {
+        width: 14px;
+        height: 14px;
+    }
+
+    .MarketCupPage--buttons__container {
+        gap: 4px;
+    }
+
+    .MarketCupPage--buttons__container:last-child {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+
+}
+
+@media (max-width: 940px) {
+
+    .MarketCupPage--button__grey {
+        min-width: 50px;
+        padding: 6px 8px;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .MarketCupPage--button {
+        padding: 6px 8px;
+        gap: 2px;
+    }
+
+    .MarketCupPage--button__Square {
+        width: 12px;
+        height: 12px;
+    }
+
+    .MarketCupPage--box {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .MarketCupPage--buttons__container {
+        gap: 0;
+    }
+
+    .MarketCupPage--buttons__container:last-child {
+        flex-direction: row-reverse;
+        width: 290px;
+        align-items: center;
+    }
+
+    .MarketCupPage--buttons__box {
+        column-gap: 6px;
+    }
+
+    .MarketCupPage--selection {
+        height: 20px;
+    }
+
+    .MarketCupPage--box__line {
+        grid-area: text;
+        width: 130px;
+        
+    }
+
+    .MarketCupPage--box__line_left {
+        grid-area: content;
+        width: 119px;
+    }
+
+}
+    .MarketCupPage--button__grey--filter.active{
+        color: var(--accent_black);
+        background-color: var(--coin-bg);
+    }
+    .MarketCupPage--button__grey--filter.active path{
+        stroke: rgba(87, 102, 237, 1);
+    }
+@media (max-width: 320px) {
+    .MarketCupPage--buttons__container {
+       justify-content: space-between;
+    }
+}

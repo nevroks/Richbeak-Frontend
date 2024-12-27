@@ -1,0 +1,20 @@
+.ParsingPage__title {
+    margin: 31px 0 32px 0;
+}
+.ParsingPage__container--links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.ParsingPage__change{
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ParsingPage__change--btn{
+    background-color: var(--accent-color);
+    color: var(--white_black);
+    border-radius: 6px;
+    padding: 8px 16px;
+}

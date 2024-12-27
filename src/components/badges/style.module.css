@@ -1,0 +1,14 @@
+.position {
+  position: absolute;
+}
+
+.topNum__top {
+  left: 10px;
+  top: 10px;
+  background-color: var(--accent-darker);
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+.topNum__counter {
+  color: var(--white-100-color);
+}

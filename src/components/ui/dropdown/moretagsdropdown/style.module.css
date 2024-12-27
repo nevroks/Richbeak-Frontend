@@ -1,0 +1,8 @@
+.Dropdown__button{
+    background-color: var(--black_white);
+    border-radius: 16px;
+}
+
+.Dropdown__button p{
+    color: var(--white_black )!important;
+}

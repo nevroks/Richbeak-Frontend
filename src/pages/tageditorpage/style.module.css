@@ -1,0 +1,11 @@
+.editor__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.editor__header--button {
+  display: flex;
+  gap: 6px;
+  color: var(--accent-darker);
+}

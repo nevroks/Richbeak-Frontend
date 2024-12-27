@@ -1,0 +1,90 @@
+.container__pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin: 30px 0 150px 0;
+}
+
+.dropdown__content {
+  height: auto !important;
+}
+
+.box__line {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.box__line select {
+  background-color: var(--button-bg);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.box__line select option {
+  color: var(--tag-text);
+  background-color: var(--button-bg);
+}
+
+.text__pagination {
+  color: var(--black-400-color);
+}
+.box__pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pagination__img {
+  width: 12px;
+  height: 12px;
+}
+
+.button__page {
+  min-width: 25px;
+  padding: 4px 6px;
+  height: 25px;
+  border-radius: 8px;
+}
+@media (max-width: 1280px) {
+  .pagination__img {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box__pagination {
+    grid-area: box;
+    width: 158px;
+    margin: auto;
+  }
+
+  .text__pagination {
+    color: var(--black-400-color);
+    min-width: 90px;
+  }
+
+  .container__pagination {
+    margin-bottom: 130px;
+    display: grid;
+    row-gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      " box box box "
+      "content . text";
+  }
+  .box__line {
+    grid-area: text;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box__line_left {
+    grid-area: content;
+    width: 119px;
+  }
+}

@@ -1,0 +1,23 @@
+.loadingError {
+  background-color: var(--bg-color-secondary);
+  height: 90px;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.loadingError__wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.loadingError__text {
+  margin-top: 6px;
+}
+
+.loadingError__img {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+

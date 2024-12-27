@@ -1,0 +1,213 @@
+.Dropdown__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: start;
+    
+}
+
+.Dropdown__wrapper--large{
+    width: 320px;
+}
+
+.Dropdown__wrapper--medium{
+    width: 220px;
+}
+
+.Dropdown__wrapper--small{
+    width: 120px;
+}
+
+.Dropdown__wrapper--xsmall{
+    width: 70px;
+}
+
+.Dropdown__wrapper--xsmall_pages{
+    width: 60px;
+}
+
+.Dropdown__button--medium{
+    padding: 10px 32px;
+}
+
+.Dropdown__button--small{
+    padding: 5px 16px;
+}
+
+.Dropdown__button--xsmall{
+    padding: 9px 8px;
+}
+
+.Dropdown__button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* padding: 10px 32px; */
+    border-radius: 8px;
+    width: 100%;
+       background: var(--input);
+}
+.Dropdown__button div{
+    padding: 0;
+}
+.Dropdown__text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.Dropdown__button--value{
+    display: flex;
+    padding: 0 10px 0 0;
+}
+
+.Dropdown__button--value svg{
+    position: absolute;
+    top: 33%;
+    left: 12px;
+}
+
+.Dropdown__button--state__img{
+    position: absolute;
+    right: 12px;
+}
+
+.Dropdown__text--state__img{
+    display: none;
+}
+
+.Dropdown__button--state__img.openned{
+    transform: rotate(180deg);
+ }
+
+.Dropdown__content--large {
+    height: 320px;
+}
+
+.Dropdown__content--medium {
+    height: 320px;
+}
+
+.Dropdown__content--small {
+    height: 100px;
+}
+
+.Dropdown__content--xsmall {
+    height: 100px;
+    z-index: 10;
+}
+
+.Dropdown__content{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 40px 0px rgba(7, 6, 34, 0.08);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Dropdown__content.with_search{
+    padding: 10px 10px 5px;
+}
+
+.Dropdown__content::-webkit-scrollbar{
+    border-radius: 14px;
+    width: 8px; /* according to figma should be 0px? */
+}
+
+.Dropdown__content::-webkit-scrollbar-thumb{
+    border-radius: 3px 0 0 3px;
+    background-color: var(--gray-600-color);
+}
+.DropdownItem{
+    cursor: pointer;
+    padding: 5px;
+}
+.DropdownItem:hover{
+    background-color: var(--gray-bg-500);
+}
+
+.DropdownItem.active{
+    background-color: var(--black-bg-900);
+    border-radius: 12px;
+    padding: 5px 5px 5px 10px;
+}
+
+.DropdownItem.active p{
+    color:var(--tag-text);
+}
+
+.DropdownSearch__input {
+    padding: 6px 8px;
+    background-color: var(--input);
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.DropdownSearch__input::placeholder {
+    color: var(--black-700-color)
+}
+
+.DropdownSearch__wrapper {
+    position: relative;
+}
+
+.DropdownSearch__icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+@media (max-width:1280px) {
+    .DropdownSearch__icon {
+        top: 4px;
+    }
+    .Dropdown__button--value svg {
+        top: 31%;
+
+    }
+    .Dropdown__content {
+        /* top: 80%; */
+    }
+}
+@media (max-width:940px) {
+
+    .Dropdown__button--value svg {
+        top: 27%;
+        left: 8px;
+    }
+    .Dropdown__button {
+        padding: 7px 17px 7px 22px;
+    }
+    .Dropdown__content {
+        padding: 5px 5px;
+    }
+}
+@media (max-width:600px) {
+    .Dropdown__wrapper {
+        max-width: 100px;
+        justify-content: unset;
+    }
+    .Dropdown__wrapper--xsmall {
+        width: 50px;
+    }
+    .Dropdown__wrapper--medium {
+        max-width: 150px;
+    }
+    .Dropdown__wrapper--xsmall .Dropdown__button--state__img{
+        right: 9px;
+    }
+    .Dropdown__button--xsmall {
+        min-width: 50px;
+        padding: 7px 17px 7px 12px;
+    }
+}
